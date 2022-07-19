@@ -1,13 +1,13 @@
 # python-docker
 
 ## Build the image:
-sudo docker build --tag python-docker .
+`sudo docker build --tag python-docker .`
 
 ## Tag image:
-sudo docker tag python-docker:latest python-docker:v1.0.0
+`sudo docker tag python-docker:latest python-docker:v1.0.0`
 
 ## Run image as a Container (mount ../core for python files updates):
-sudo docker run -t -d -v /volume1/project/python-docker/core:/app/core --name python-app python-docker
+`sudo docker run -t -d -v /volume1/project/python-docker/core:/app/core --name python-app python-docker`
 
 ## Reuse the Container:
-sudo docker restart python-app
+`sudo docker restart python-app`
